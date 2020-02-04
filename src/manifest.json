@@ -1,0 +1,47 @@
+{
+    "name": "Helios Extension",
+    "description": "Wallet in your Browser",
+    "version": "0.0.1",
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "windows": "Alt+Shift+M",
+                "mac": "Alt+Shift+M",
+                "chromeos": "Alt+Shift+M",
+                "linux": "Alt+Shift+M"
+            }
+        }
+    },
+    "manifest_version": 2,
+    "permissions": [
+        "storage",
+        "activeTab",
+        "webRequest",
+        "notifications"
+    ],
+    "web_accessible_resources": [
+        "assets/css/*",
+        "assets/js/*",
+        "assets/fonts/*"
+    ],
+
+    "icons": {
+        "64": "icons/heliosLogo64.png"
+    },
+    "content_scripts": [{
+        "js": ["js/background.js"],
+        "matches": ["http://*/*", "https://*/*"]
+      }],
+      "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+    "browser_action": {
+        "default_icon": {
+            "32": "icons/heliosLogo32.png",
+            "64": "icons/heliosLogo64.png",
+            "128": "icons/heliosLogo128.png"
+            
+          },
+        "default_title": "Helios",
+        "default_popup": "index.html"
+    }
+}

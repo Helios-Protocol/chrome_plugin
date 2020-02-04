@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html style=" width:357px; height:600px;">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="manifest" href="/AngularExtensionProject/dist/AngularExtensionProject/manifest.json">
+    <script src="../js/heliosweb3.js"></script>
+    <div class="header-container app-header">
+        <div class="app-header-logo-container">
+            <img src="/icons/heliosLogo64.png">
+        </div>
+        <div> <strong>Mainnet Wallet V 0.2</strong> </div>
+    </div>
+</head>
+
+<body>
+    <div class='frontpage_block' style="background-color: aliceblue; margin-top: 22px; width:357px; height:600px;">
+        <div id="frontpage-sign_in" class='frontpage_block_content active'>
+            <div class="frontpage_block_background"></div>
+            <div class="frontpage_block_content_container">
+             <!-- <div class="app-logo-container-login">
+                <img src="/images/helios_logo_background.png"> 
+             </div>    -->
+                <form>
+                    <h1 class="margin-center-singUp">Sign in</h1>
+                    <div class='line_separater'>
+                        <div class='input_line_container'>
+                            *
+                            <input id='input_sign_in_username' onchange="testConection()" placeholder="Username" class='input-login'
+                                name='username' type="text"  autocomplete="account_username">
+                        </div>
+                        <div class='input_line_container'>
+                            *
+
+                            <input id='input_sign_in_password' class='input-login' placeholder="Password"
+                                name='password' type="password" autocomplete="account_password">
+                        </div>
+                        <div class='input_line_container'>
+                                &nbsp;
+                            <input id='input_sign_in_two_factor_authentication'
+                                placeholder="Two factor code (if enabled)" class='input-login' name='two_factor'
+                                type="text" autocomplete="off">
+                        </div>
+                    </div>
+                        <div>
+                            <button type="submit" class="btn-login">
+                                Submit
+                            </button>
+                        </div>
+
+                    <div class="extra-login">
+                        <h2>Don't have an account?</h2>
+                        <div class="line_separater_medium">
+                            <a href="#frontpage-create_new_account" class="italic local_link">Create a new account</a>
+                        </div>
+                    </div>
+                    <div class='line_separater extra-login'>
+                        <h2>Advanced Options</h2>
+                        <div class="line_separater_medium">
+                            <a href="#main_page-add_offline_wallet" class="italic local_link"
+                                id='offline_mode_link'>Local wallet mode</a>
+                        </div>
+                    </div>
+        
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
